@@ -6,5 +6,4 @@ services:
     - docker build -t codenutridocker/docker-react -f Dockerfile.dev .
 
     script:
-      - docker run -e CI=true codenutridocker/docker-react npm run test -- --coverage
-      
+      - docker run codenutridocker/docker-react npm run test -- --coverage
